@@ -1,0 +1,19 @@
+{
+  "name": "Task",
+  "version": "1.0.0",
+  "description": "\"task\"",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4",
+    "mongodb": "^2.0.49"
+  }
+}
