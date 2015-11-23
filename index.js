@@ -1,9 +1,11 @@
 var addDigits = require("./app/add-digits.js");
 var addToDb=require("./app/add-to-db.js")
 
-var sum=addDigits(process.argv[2])
+var num=parseInt(process.argv[2])
+var sum=addDigits(num)
+
 var obj={
-    number:process.argv[2],
+    number:num,
     sum:sum,
     timeStamp:Date.now()
 } 
