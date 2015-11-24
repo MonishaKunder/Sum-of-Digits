@@ -1,5 +1,5 @@
 module.exports=function(number){
-	if(isNaN(number))
+	if(isNaN(number) || number.toString().indexOf('.')!=-1)
 		return 0;
 	var sumOfDigits=0;
 	while(number>0){

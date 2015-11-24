@@ -8,11 +8,12 @@ describe("Finding sum of digits",function() {
 
   it("Find sum of digits", function() {
     var val=addDigits(123)
+    console.log(val)
     expect(val).to.equal(6);
   });
   
   it("Sum should be zero for any input other than number", function() {
-    var val=addDigits('hi')
+    var val=addDigits(12.3)
     expect(val).to.equal(0);
   });
 
