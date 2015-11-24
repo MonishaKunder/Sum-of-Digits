@@ -12,7 +12,17 @@ describe("Finding sum of digits",function() {
     expect(val).to.equal(6);
   });
   
-  it("Sum should be zero for any input other than number", function() {
+  it("Sum should be zero if input is string", function() {
+    var val=addDigits('hi')
+    expect(val).to.equal(0);
+  });
+
+  it("Sum should be zero if input is special characters", function() {
+    var val=addDigits('&%$#@')
+    expect(val).to.equal(0);
+  });
+
+  it("Sum should be zero if input is floating point number", function() {
     var val=addDigits(12.3)
     expect(val).to.equal(0);
   });
