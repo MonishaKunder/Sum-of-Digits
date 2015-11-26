@@ -1,7 +1,7 @@
 'use strict'
-var connection=require("./connection.js");
-module.exports=function(obj,callback) {
-	if (obj.number === undefined || obj.sum === undefined ||obj.timeStamp === undefined)
+var connection = require("./connection.js");
+module.exports = function(obj,callback) {
+	if (obj.number === undefined || obj.sum === undefined || obj.timeStamp === undefined)
 		return callback("Some property is missing");
 
 	connection('mongodb://localhost:27017/test',function(error,db) {
